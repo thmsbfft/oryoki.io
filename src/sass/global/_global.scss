@@ -2,9 +2,115 @@ body {
 	background: #262626;
 	color: #fff;
 	font-family: 'Roboto', sans-serif;
-	font-weight: 400;
+	font-weight: 300;
 	font-size: 34px;
 	line-height: 40px;
 	letter-spacing: -1px;
 	@extend .smooth;
+}
+
+.small {
+	opacity: 0.4;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	font-size: 20px;
+	// letter-spacing: 0.05px;
+	color: rgba(255, 255, 255, 0.8);
+}
+
+a:link, a:visited {
+	color: #00EC91;
+	display: inline-block;
+	text-decoration: none;
+	line-height: 30px;
+	border-bottom: 2px solid #00EC91;
+	text-shadow: 2px 2px #262626;
+}
+
+.content {
+	width: 95%;
+	margin: auto;
+	max-width: 1180px;
+}
+
+header {
+	margin-top: 115px;
+	margin-bottom: 115px;
+	line-height: 34px;
+	.logo {
+		pointer-events: none;
+	}
+	.col2 {
+		margin-top: 70px;
+		position: relative;
+	}
+	.download {
+		position: relative;
+		@extend .clearfix;
+		&:hover {
+			.download-en {
+				opacity: 0;
+			}
+			.download-jp {
+				opacity: 1;
+			}
+		}
+		.download-en {
+			position: absolute;
+			transition: opacity 0.2s;
+
+		}
+		.download-jp {
+			opacity: 0;
+			transition: opacity 0.2s;
+			position: absolute;
+			border-bottom: none;
+			letter-spacing: -4px;
+			span {
+				position: relative;
+				display: inline-block;
+				animation: float 1s infinite ease-in-out;
+				&:nth-child(1) { animation-delay: .1s }
+				&:nth-child(2) { animation-delay: .2s }
+				&:nth-child(3) { animation-delay: .3s }
+				&:nth-child(4) { animation-delay: .4s }
+				&:nth-child(5) { animation-delay: .5s }
+				&:nth-child(6) { animation-delay: .6s }
+			}
+		}
+	}
+	p.small {
+		margin-top: 32px;
+	}
+}
+
+.intro {
+	a:link, a:visited {
+		color: white;
+		border-color: white;
+	}
+}
+
+.row {
+	@extend .clearfix;
+}
+
+.col1 {
+	width: 49.5%;
+	float: left;
+}
+
+.col2 {
+	width: 49.5%;
+	float: right;
+}
+
+.oryoki {
+	text-align: center;
+	margin-bottom: 105px;
+	margin-top: 105px;
+	img {
+		max-width: 816px;
+		width: 100%;
+	}
 }

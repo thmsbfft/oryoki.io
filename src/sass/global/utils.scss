@@ -30,5 +30,11 @@
 }
 
 .fade-in {
-  animation: fade-in 1s 1 ease-out;
+  animation: fade-in 2s 1 ease-out;
+}
+
+@keyframes float {
+  0% { transform: translate(0, -30px); }
+  50% { transform: translate(0, 0px); }
+  100% { transform: translate(0, -30px); }
 }
