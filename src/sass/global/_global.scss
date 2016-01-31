@@ -88,6 +88,7 @@ header {
 	a:link, a:visited {
 		color: white;
 		border-color: white;
+		transition: color 0.3s, border-color 0.3s;
 	}
 }
 
@@ -96,12 +97,12 @@ header {
 }
 
 .col1 {
-	width: 49.5%;
+	width: 49%;
 	float: left;
 }
 
 .col2 {
-	width: 49.5%;
+	width: 49%;
 	float: right;
 }
 
@@ -112,5 +113,37 @@ header {
 	img {
 		max-width: 816px;
 		width: 100%;
+	}
+}
+
+.status {
+	margin-bottom: 105px;
+	.left {
+		float: left;
+	}
+	.right {
+		float: right;
+		text-align: right;
+		color: rgba(255, 255, 255, 0.4);
+	}
+}
+
+footer {
+	text-align: center;
+	// padding: 70px 0;
+	margin-top: 40px;
+	margin-bottom: 70px;
+	font-size: 20px;
+	color: #666666;
+	a:link, a:visited {
+		line-height: 20px;
+		color: #666666;
+		border-bottom: 1px solid #666666;
+		text-shadow: 2px 2px #262626;
+		transition: color 0.3s, border-color 0.3s;
+	}
+	a:hover {
+		color: rgba(255, 255, 255, 0.8);
+		border-color: rgba(255, 255, 255, 0.8);
 	}
 }
