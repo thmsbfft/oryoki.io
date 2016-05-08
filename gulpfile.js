@@ -16,6 +16,7 @@ var vendor = [
 ];
 
 var scripts = [
+    'src/js/Reader.js',
     'src/js/loader.js',
     'src/js/app.js',
 	'src/js/index.js'
@@ -76,5 +77,10 @@ gulp.task('data', function() {
     browserSync.reload();
 });
 
+gulp.task('media', function() {
+    gulp.src('src/media/**/*')
+        .pipe(gulp.dest('www/media/'))
+});
+
 // DEFAULT
-gulp.task('default', ['data', 'sass', 'js', 'serve']);
+gulp.task('default', ['data', 'media', 'sass', 'js', 'serve']);

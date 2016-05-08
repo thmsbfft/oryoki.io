@@ -17,6 +17,7 @@ var App = {
 	loadCompleted: function() {
 		this.container.innerHTML = Loader.getContentById('homepage');
 		this.initialTransitionIn();
+		documentation = new Reader('https://raw.githubusercontent.com/thmsbfft/tabula-rasa/master/README.md', this.container.querySelectorAll('.documentation')[0]);
 	},
 
 	initialTransitionIn: function() {

@@ -1,6 +1,9 @@
+$background-color: hsla(0,0%,25%,1);
+$copy-color: #fff;
+
 body {
-	background: #262626;
-	color: #fff;
+	background: $background-color;
+	color: $copy-color;
 	font-family: 'Roboto', sans-serif;
 	font-weight: 300;
 	font-size: 34px;
@@ -24,7 +27,7 @@ a:link, a:visited {
 	text-decoration: none;
 	line-height: 30px;
 	border-bottom: 2px solid #00EC91;
-	text-shadow: 2px 2px #262626;
+	text-shadow: 2px 2px $background-color;
 }
 
 .content {
@@ -108,10 +111,10 @@ header {
 
 .oryoki {
 	text-align: center;
-	margin-bottom: 105px;
-	margin-top: 105px;
+	margin-top: 85px;
+	margin-bottom: 45px;
 	img {
-		max-width: 816px;
+		max-width: 912px;
 		width: 100%;
 	}
 }
@@ -128,18 +131,18 @@ header {
 	}
 }
 
-footer {
+.contact {
 	text-align: center;
 	// padding: 70px 0;
 	margin-top: 40px;
 	margin-bottom: 70px;
 	font-size: 20px;
-	color: #666666;
+	color: hsla(0,0%,50%,1);
 	a:link, a:visited {
 		line-height: 20px;
-		color: #666666;
+		color: hsla(0,0%,50%,1);
 		border-bottom: 1px solid #666666;
-		text-shadow: 2px 2px #262626;
+		text-shadow: 2px 2px $background-color;
 		transition: color 0.3s, border-color 0.3s;
 	}
 	a:hover {
