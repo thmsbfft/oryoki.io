@@ -2,4 +2,46 @@
 	border-top: 2px solid rgba(255, 255, 255, 0.1);
 	width: 100%;
 	padding-top: 90px;
+
+    .documentation {
+
+    	margin-top: 25px;
+
+		-webkit-column-count: 3; /* Chrome, Safari, Opera */
+	    -moz-column-count: 3; /* Firefox */
+	    column-count: 3;
+
+    	article {
+    		-webkit-column-break-inside: avoid;
+
+    		p {
+    			font-size: 0.75em;
+    			line-height: 1.5;
+    			color: rgba(255,255,255,.5);
+    		}
+    	}
+
+    	h2 {
+    		color: white;
+    		display: inline-block;
+    		margin-top: 1.4em;
+    	}
+
+    	code {
+    		color: white;
+    		display: inline-block;
+    		padding: 2px 5px;
+    		line-height: 1;
+    		border-radius: 5px;
+    		background: rgba(0,0,0,0.2);
+    		font-family: 'Roboto Mono';
+    		text-transform: uppercase;
+    		font-size: 0.65em;
+    		font-weight: 400;
+    		position: relative;
+    		top: -1px;
+    		// letter-spacing: 1px;
+    	}
+    }
+
 }
