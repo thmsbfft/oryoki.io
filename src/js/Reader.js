@@ -13,6 +13,10 @@ function Reader(url, targetEl) {
 
 	this.json = undefined;
 
+	this.rules = {
+		'`(.*?)`' : '<code>$1</code>',	// inline code
+	};
+
 	this.url = url;
 	this.el = targetEl;
 
@@ -43,19 +47,36 @@ Reader.prototype.getJson = function(data) {
 
 	// Clean empty lines
 	data.split('\n').forEach(function(line, index) {
-		if(line != '') trimmed.push(line);
-	});
+		if(line != '') {
+			trimmed.push(line);
+		}
+	}.bind(this));
 
 	trimmed.forEach(function(line, index) {
 		if(/^# +/.test(line)) {
 			// Matches Headlines
-			// And puts the entry into the json
 			var heading = /(\w)(.*)$/.exec(line)[0].toLowerCase();
-			json[heading] = trimmed[index+1].toLowerCase();
+			// Render following entry and put in json
+			json[heading] = this.render(trimmed[index+1].toLowerCase());
 		}
-	});
+	}.bind(this));
 
 	return json;
+
+}
+
+Reader.prototype.render = function(text) {
+
+	var ret;
+
+	for(var i in this.rules) {
+		var regex = i;
+		var replacement = this.rules[i];
+		
+		ret = text.replace(new RegExp(regex, 'g'), replacement);
+	}
+
+	return ret;
 
 }
 

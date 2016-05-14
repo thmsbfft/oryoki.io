@@ -1,5 +1,5 @@
 # Title bar
-Can be hidden with `CMD+/` for an interface-less window.
+Can be hidden with `CMD+/` for an frameless window.
 
 # Windows
 Windows can float on top of all others. `CMD+ALT+M` allows to enter window dimensions. Holding `ALT` allows to drag windows around.
