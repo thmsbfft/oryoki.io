@@ -36,7 +36,7 @@ a:link, a:visited {
 }
 
 .content {
-	width: 95%;
+	width: 90%;
 	margin: auto;
 	max-width: 1180px;
 }
@@ -154,4 +154,63 @@ header {
 		color: rgba(255, 255, 255, 0.8);
 		border-color: rgba(255, 255, 255, 0.8);
 	}
+}
+
+@media (max-width: 950px) {
+
+	body {
+		font-size: 30px;
+	}
+
+	.content {
+		width: 85%;
+	}
+
+	header {
+
+	}
+
+}
+
+@media (max-width: 700px) {
+
+	body {
+		font-size: 30px;
+	}
+
+	.col1 {
+		float: none;
+		width: 100%;
+		margin-bottom: 30px;
+	}
+
+	.col2 {
+		float: none;
+		width: 100%;
+	}
+
+	.content {
+		width: 80%;
+	}
+
+	header {
+		text-align: center;
+		.download {
+			width: 100%;
+			.download-en {
+				// width: 100%;
+				// display: inline;
+				position: relative;
+				left: 0;
+			}
+			.download-jp {
+				width: 100%;
+				left: 0;
+			}
+		}
+		p.small {
+			margin-top: 0;
+		}
+	}
+
 }
