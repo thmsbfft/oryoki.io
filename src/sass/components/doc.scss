@@ -1,7 +1,7 @@
 .doc {
-	border-top: 2px solid rgba(255, 255, 255, 0.1);
+	// border-top: 2px solid rgba(255, 255, 255, 0.1);
 	width: 100%;
-	padding-top: 90px;
+	// padding-top: 90px;
 
     .documentation {
 
@@ -10,6 +10,7 @@
 		-webkit-column-count: 3; /* Chrome, Safari, Opera */
 	    -moz-column-count: 3; /* Firefox */
 	    column-count: 3;
+        column-gap: 70px;
 
     	article {
     		-webkit-column-break-inside: avoid;
