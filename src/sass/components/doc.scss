@@ -52,13 +52,13 @@
         -webkit-column-count: 2; /* Chrome, Safari, Opera */
         -moz-column-count: 2; /* Firefox */
         column-count: 2;
-        column-gap: 40px;
+        column-gap: 60px;
 
       }
 
     }
 
-    @media (max-width: 500px) {
+    @media (max-width: 800px) {
       
       .documentation {
 

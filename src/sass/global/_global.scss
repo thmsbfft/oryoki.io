@@ -38,7 +38,7 @@ a:link, a:visited {
 .content {
 	width: 90%;
 	margin: auto;
-	max-width: 1180px;
+	max-width: 1700px;
 }
 
 header {
@@ -117,7 +117,7 @@ header {
 .oryoki {
 	text-align: center;
 	margin-top: 85px;
-	// margin-bottom: 45px;
+	margin-bottom: -30px;
 	img {
 		max-width: 912px;
 		width: 100%;
@@ -156,7 +156,7 @@ header {
 	}
 }
 
-@media (max-width: 950px) {
+@media (max-width: 1100px) {
 
 	body {
 		font-size: 30px;
@@ -180,7 +180,7 @@ header {
 
 }
 
-@media (max-width: 700px) {
+@media (max-width: 800px) {
 
 	body {
 		font-size: 30px;
