@@ -13,11 +13,14 @@ For default interface state and a couple options. Preferences are stored in a js
 # Mini Console
 Bring up with `CMD+ALT+C`. Only displays the last message (for now). Supports javascript execution in the web page.
 
+# Devtools
+Standard Chrome devtools with `CMD+ALT+I`.
+
 # Screen Grab
 Save to downloads with `CMD+~`. Copy to clipboard with `CMD+SHIFT+C`.
 
 # Video Recording
-Experimental. Requires ffmpeg for encoding. Supports lossless and lossy quality preferences.
+Experimental. Requires ffmpeg for encoding. Supports `prores` and `mp4` quality preferences. Ōryōki looks for ffmpeg in /usr/local/bin.
 
 # Notifications
 Show rough loading times and loading state. Recording mutes notifications.

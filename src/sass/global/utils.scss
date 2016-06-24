@@ -38,3 +38,9 @@
   50% { transform: translate(0, 0px); }
   100% { transform: translate(0, -30px); }
 }
+
+@keyframes rainbow {
+  0% { color: hsl(100,100%,70%); }
+  50% { color: hsl(200,100%,70%); }
+  // 100% { color: hsl(180,100%,70%); }
+}
