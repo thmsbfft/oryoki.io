@@ -10,14 +10,14 @@ For default interface state and a couple options. Preferences are stored in a js
 # Omnibox
 `CMD+L` bring up the omnibox. It serves as the URL and search bar. Keywords are redirected to a Google query. `TAB` allows to switch between search and "lucky" mode.
 
+# Devtools
+`CMD+ALT+I` for standard Chrome devtools.
+
 # Mini Console
 Bring up with `CMD+ALT+C`. Only displays the last message (for now). Supports javascript execution in the web page.
 
-# Devtools
-Standard Chrome devtools with `CMD+ALT+I`.
-
 # Screen Grab
-Save to downloads with `CMD+~`. Copy to clipboard with `CMD+SHIFT+C`.
+Save to downloads with `CMD+~`. `CMD+SHIFT+C` to copy to clipboard.
 
 # Video Recording
 Experimental. Requires ffmpeg for encoding. Supports `prores` and `mp4` quality preferences. Ōryōki looks for ffmpeg in /usr/local/bin.
