@@ -116,10 +116,11 @@ header {
 .oryoki {
 	text-align: center;
 	margin-top: 85px;
-	margin-bottom: -30px;
 	img {
-		max-width: 912px;
+		border-radius: 6px;
+		max-width: 800px;
 		width: 100%;
+		box-shadow: 0px 2px 60px rgba(0,0,0,0.2);
 	}
 }
 
@@ -171,10 +172,6 @@ header {
 
 	.content {
 		width: 85%;
-	}
-
-	header {
-
 	}
 
 }

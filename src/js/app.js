@@ -17,7 +17,7 @@ var App = {
 	loadCompleted: function() {
 		this.container.innerHTML = Loader.getContentById('homepage');
 		this.initialTransitionIn();
-		documentation = new Reader('https://raw.githubusercontent.com/thmsbfft/oryoki/master/USER-MANUAL.md', this.container.querySelectorAll('.documentation')[0]);
+		documentation = new Reader('https://raw.githubusercontent.com/thmsbfft/oryoki/dev/USER-MANUAL.md', this.container.querySelectorAll('.documentation')[0]);
 	},
 
 	initialTransitionIn: function() {
