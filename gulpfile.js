@@ -71,6 +71,9 @@ gulp.task('data', function() {
     gulp.src('src/index.html')
         .pipe(gulp.dest('www/'))
 
+    gulp.src('src/latest.json')
+        .pipe(gulp.dest('www/'))
+
     gulp.src('src/data/**/*')
         .pipe(gulp.dest('www/data'))
 
