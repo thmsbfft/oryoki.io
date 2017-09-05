@@ -53,7 +53,7 @@ Reader.prototype.getJson = function(data) {
 	}.bind(this));
 
 	trimmed.forEach(function(line, index) {
-		if(/^# +/.test(line)) {
+		if(/^#### +/.test(line)) {
 			// Matches Headlines
 			var heading = /(\w)(.*)$/.exec(line)[0].toLowerCase();
 			// Render following entry and put in json
