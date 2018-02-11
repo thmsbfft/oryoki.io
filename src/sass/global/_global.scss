@@ -1,14 +1,17 @@
-$background-color: hsla(0,0%,23%,1);
+$background-color: hsla(0,0%,43%,1);
 $copy-color: #fff;
+
+html {
+	background: $background-color;
+}
 
 body {
 	background: $background-color;
 	color: $copy-color;
-	font-family: 'Roboto', sans-serif;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 	font-weight: 300;
-	font-size: 34px;
-	line-height: 40px;
-	letter-spacing: -1px;
+	font-size: 30px;
+	line-height: 38px;
 	@extend .smooth;
 }
 
@@ -18,27 +21,28 @@ body {
 }
 
 .small {
-	opacity: 0.4;
-	font-family: 'Roboto', sans-serif;
-	font-weight: 300;
+	opacity: 0.6;
+	font-weight: 400;
 	font-size: 20px;
-	// letter-spacing: 0.05px;
 	color: rgba(255, 255, 255, 0.8);
 }
 
 a:link, a:visited {
-	color: #00EC91;
+	color: white;
 	display: inline-block;
 	text-decoration: none;
 	line-height: 30px;
-	border-bottom: 2px solid #00EC91;
-	text-shadow: 2px 2px $background-color;
+	&::before {
+		content: '↪︎';
+		position: relative;
+		top: 2px;
+	}
 }
 
 .content {
 	width: 90%;
 	margin: auto;
-	max-width: 1700px;
+	max-width: 1200px;
 }
 
 header {
@@ -55,6 +59,9 @@ header {
 	.download {
 		position: relative;
 		@extend .clearfix;
+		& a::before {
+			content: '';
+		}
 		&:hover {
 			.download-en {
 				opacity: 0;
@@ -73,6 +80,7 @@ header {
 			position: absolute;
 			border-bottom: none;
 			letter-spacing: -4px;
+			font-weight: 400;
 			span {
 				position: relative;
 				display: inline-block;
@@ -93,9 +101,11 @@ header {
 
 .intro {
 	a:link, a:visited {
-		color: white;
-		border-color: white;
-		transition: color 0.3s, border-color 0.3s;
+		color: hsla(0,0%,70%,1);
+		transition: color 0.3s
+	}
+	a:hover {
+		color: hsla(0,0%,100%,1);
 	}
 }
 
@@ -117,10 +127,8 @@ header {
 	text-align: center;
 	margin-top: 85px;
 	img {
-		border-radius: 6px;
-		max-width: 800px;
+		border-radius: 8px;
 		width: 100%;
-		box-shadow: 0px 2px 60px rgba(0,0,0,0.2);
 	}
 }
 
@@ -138,16 +146,16 @@ header {
 
 .contact {
 	text-align: center;
-	// padding: 70px 0;
 	margin-top: 70px;
 	margin-bottom: 70px;
 	font-size: 20px;
-	color: hsla(0,0%,50%,1);
+	color: hsla(0,0%,60%,1);
 	a:link, a:visited {
+		&::before {
+			content: '';
+		}
 		line-height: 20px;
-		color: hsla(0,0%,50%,1);
-		border-bottom: 1px solid #666666;
-		text-shadow: 2px 2px $background-color;
+		color: hsla(0,0%,60%,1);
 		transition: color 0.3s, border-color 0.3s;
 	}
 	a:hover {
@@ -202,8 +210,6 @@ header {
 		.download {
 			width: 100%;
 			.download-en {
-				// width: 100%;
-				// display: inline;
 				position: relative;
 				left: 0;
 			}
